@@ -43,7 +43,6 @@ class App extends Component {
     );
   };
   renderItems = () => {
-    console.log('test it in the trough.');
     const { viewCompleted } = this.state;
     const newItems = this.state.todoList.filter(item => item.completed === viewCompleted);
     return newItems.map(item => (
